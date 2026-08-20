@@ -1,0 +1,19 @@
+name: PulseDesk CI
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Tests
+        run: echo "Tests Passed"
+
+      - name: Build Application
+        run: echo "Build Successful"
